@@ -1,0 +1,4 @@
+driver.switchTo().frame(1);
+driver.switchTo().frome("iframe1");
+driver.switchTo().frame("02341fs");
+driver.switchTo().defaultContent();
