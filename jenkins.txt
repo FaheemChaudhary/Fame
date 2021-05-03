@@ -1,0 +1,18 @@
+How continuous integration is achieved in jenkins?
+Continuous Integration is a process of integrating code changes 
+from multiple developers in a single project many times. The software
+ is tested immediately after a code commit. With each code commit, code 
+is built and tested. If the test is passed, the build is tested for deployment.
+ If the deployment is successful, the code is pushed to production.
+*The code is built and test as soon as Developer commits code. 
+Jenkin will build and test code many times during the day
+
+*If the build is successful, then Jenkins will deploy the source into the 
+test server and notifies the deployment team.
+
+*If the build fails, then Jenkins will notify the errors to the developer team.
+*The code is built immediately after any of the Developer commits.it's easy to
+ detect whose code caused the built to fail
+*Automated build and test process saving timing and reducing defects.
+*The code is deployed after every successful build and test.
+*The development cycle is fast. New features are more readily available to users. Increases profits.
