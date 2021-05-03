@@ -1,0 +1,13 @@
+What is a Feature File in Cucumber?
+A Feature File is an entry point to the Cucumber tests. This is a file where you will describe
+ your tests in Descriptive language (Like English). It is an essential part of Cucumber, 
+as it serves as an automation test script as well as live documents. A feature file can contain a scenario or 
+can contain many scenarios in a single feature file but it usually contains a list of scenarios.
+
+Feature: Defines what feature you will be testing in the tests below
+
+Given: Tells the pre-condition of the test
+
+And: Defines additional conditions of the test
+
+Then: States the post condition. You can say that it is the expected result of the test.
