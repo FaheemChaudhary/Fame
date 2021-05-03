@@ -1,0 +1,11 @@
+What are Agile ceremonies?
+Scrum ceremonies are important elements of the agile software delivery process. 
+ these scrum ceremonies provide the framework for teams to get work done in a 
+structured manner, help to set expectations, empower the team to collaborate effectively,
+ and ultimately drive results. 
+ The four scrum ceremonies are:
+1.Sprint Planning
+2.Daily Scrum
+3.Sprint Review
+4.Sprint Retrospective
+Scrum is a way to implement agile.
