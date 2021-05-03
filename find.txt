@@ -1,0 +1,3 @@
+What is the difference between find element and find elements?
+FindElement: A command used to uniquely identify a web element within the web page. 
+FindElements: A command used to identify a list of web elements within the web page.
