@@ -1,0 +1,17 @@
+What are the exceptions in selenium?.Mention 5 exceptions you have face?
+Exceptions in Selenium are similar to exceptions in other programming languages. 
+The most common exceptions in Selenium are:
+
+i. TimeoutException: This exception is thrown when a command performing an operation does
+ not complete in the stipulated time
+
+ii. NoSuchElementException: This exception is thrown when an element with given
+ attributes is not found on the web page
+
+iii. ElementNotVisibleException: This exception is thrown when the element is
+ present in DOM (Document Object Model), but not visible on the web page
+
+iv. StaleElementException: This exception is thrown when the element is either
+ deleted or no longer attached to the DOM.
+	
+v. NoAlertPresentException: This Exception occurs when you switch to no presented alert.
