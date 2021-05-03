@@ -1,0 +1,27 @@
+
+What is Defect Life Cycle?
+Defect life cycle is a cycle which a defect goes through during its lifetime.
+ It starts when defect is found and ends when a defect is closed, after ensuring it’s not reproduced.
+ Defect life cycle is related to the bug found during testing.
+The defect life cycle can vary from organization to organization and also from project to project
+ based on several factors like organization policy, software development model
+ used (like Agile, Iterative), project timelines, team structure etc.
+		
+			New
+			 |
+	   |----------->Assigned  |---Duplicate
+	   |		 |	  |---Rejected
+	   |		Open------|---Deferred
+	   |		 |	  |---Not a Bug
+	   |		Fixed
+	   |		 |
+	   |		Pending
+	   |		Retest
+	   |		 |
+	Reopened  <----Retest
+			 |
+			Verified
+			 |
+			Closed
+
+		Bug/Defect Lifecycle	
