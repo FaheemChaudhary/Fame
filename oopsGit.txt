@@ -1,0 +1,46 @@
+Explain oops with showing some examples from selenium.
+Below are the different Java OOPs concepts and the ways how it is used in Selenium Automation Framework:
+
+1) DATA ABSTRACTION
+Data Abstraction is the property by virtue of which only the essential details are displayed to the user. 
+The trivial or the non-essentials units are not displayed to the user. In java, abstraction is achieved by 
+interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+In Selenium, WebDriver itself acts as an interface.
+WebDriver driver = new ChromeDriver();
+
+We initialize the Chrome Browser using Selenium Webdriver. It means we are creating a reference variable (driver) of the interface (WebDriver) and creating an Object. Here WebDriver is an Interface and ChromeDriver is a class.
+
+We can apply Data Abstraction in a Selenium framework by using the Page Object Model design pattern. We define all our locators and their methods in the page class. We can use these locators in our tests but we cannot see the implementation of their underlying methods. So we only show the locators in the tests but hide the implementation. This is a simple example of how we can use Data Abstraction in our Automation Framework.
+
+2) ENCAPSULATION
+
+Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates. Encapsulation can be achieved by: Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+
+All the classes in an Automation Framework are an example of Encapsulation. In Page Object Model classes, we declare the data members using @FindBy and initialization of data members will be done using Constructor to utilize those in methods.
+
+3) INHERITANCE
+
+Inheritance is the mechanism in java by which one class is allow to inherit the features(fields and methods) of another class.
+
+We can apply Inheritance in our Automation Framework by creating a Base Class to initialize the WebDriver interface, browsers, waits, reports, logging,etc. and then we can extend this Base Class and its methods in other classes like Tests or Utilities. This is a simple example of how we can apply Inheritance in our framework.
+
+4) POLYMORPHISM
+
+The word polymorphism means having many forms.  Polymorphism allows us to perform a single action in different ways. In Java polymorphism can be achieved by two ways:
+
+– Method Overloading: When there are multiple methods with same name but different parameters then these methods are said to be overloaded. 
+In Selenium Automation, Implicit wait is an example of Method Overloading. In Implicit wait we use different time stamps such as SECONDS, MINUTES, HOURS etc.
+
+Some more examples of Method Overloading in Selenium are present in methods of Actions Class and Assert class in TestNG 
+– Method Overriding: It occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
+
+In Selenium Automation, Method Overriding can be achieved by overriding any WebDriver method. For example, we can override the findElement method 
+public static WebElement findElement(By Locator){
+    WebElement element = fluentWait.until(new Function<WebDriver, WebElement>() {
+        @Override
+        public WebElement apply(WebDriver driver) {
+            return driver.findElement(Locator);
+        }
+    });
+    return element;
+}
